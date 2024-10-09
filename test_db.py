@@ -13,7 +13,7 @@ collection.add(
 )
 
 sentences = ["Hello Amy"]
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+model = SentenceTransformer("Qwen/Qwen2.5-7B-Instruct")
 embeddings = model.encode(sentences)
 
 results = collection.query(query_embeddings=[embeddings], n_results=2)
